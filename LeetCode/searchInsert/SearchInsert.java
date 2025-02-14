@@ -1,3 +1,4 @@
+package searchInsert;
 /**
  * The SearchInsert class provides a method to find the index at which a target value should be inserted
  * into a sorted array of integers, such that the array remains sorted.
