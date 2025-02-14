@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class Roman {
     /**
      * Converts a Roman numeral to an integer.
      * 
@@ -38,13 +38,13 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Roman Roman = new Roman();
         
         // Test cases
-        System.out.println(solution.romanToInt("III")); // Output: 3
-        System.out.println(solution.romanToInt("IV")); // Output: 4
-        System.out.println(solution.romanToInt("IX")); // Output: 9
-        System.out.println(solution.romanToInt("LVIII")); // Output: 58
-        System.out.println(solution.romanToInt("MCMXCIV")); // Output: 1994
+        System.out.println(Roman.romanToInt("III")); // Output: 3
+        System.out.println(Roman.romanToInt("IV")); // Output: 4
+        System.out.println(Roman.romanToInt("IX")); // Output: 9
+        System.out.println(Roman.romanToInt("LVIII")); // Output: 58
+        System.out.println(Roman.romanToInt("MCMXCIV")); // Output: 1994
     }
 }
