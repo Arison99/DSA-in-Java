@@ -19,4 +19,29 @@ public class TwoSum {
         // Return an empty array if no solution is found (should not happen as per problem constraints)
         return new int[] {};
     }
+
+    public static void main(String[] args) {
+        TwoSum solution = new TwoSum();
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = solution.twoSum(nums, target);
+        System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
+    }
 }
+
+/*
+ * Time Complexity: O(n) - We traverse the list containing n elements only once. 
+ * Each lookup in the table costs only O(1) time.
+ * 
+ * Space Complexity: O(n) - The extra space required depends on the number of 
+ * items stored in the hash table, which stores at most n elements.
+ * 
+ * Pseudo Code:
+ * 1. Initialize an empty HashMap.
+ * 2. Iterate through the array.
+ * 3. For each element, calculate the difference needed to reach the target.
+ * 4. Check if this difference is already in the HashMap.
+ * 5. If it is, return the current index and the index of the difference.
+ * 6. If not, add the current element and its index to the HashMap.
+ * 7. If no solution is found, return an empty array (though the problem guarantees one solution).
+ */
